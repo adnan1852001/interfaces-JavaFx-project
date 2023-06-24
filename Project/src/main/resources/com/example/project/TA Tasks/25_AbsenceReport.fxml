@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="550.0" prefWidth="680.0" style="-fx-background-color: #343C4E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.TA Tasks.ViewLectures">
+   <children>
+      <TableView layoutX="10.0" layoutY="91.0" prefHeight="379.0" prefWidth="660.0" stylesheets="@../../../../CSS/tableView.css">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Student ID" />
+          <TableColumn prefWidth="150.0" text="Student Name" />
+            <TableColumn prefWidth="100.0" text="Total Lectures" />
+            <TableColumn prefWidth="100.0" text="Total Attend" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" />
+            <TableColumn prefWidth="100.0" text="Total Absence" />
+            <TableColumn prefWidth="100.0" text="Absent Percent" />
+        </columns>
+      </TableView>
+      <Ellipse fill="#9384f3" layoutX="350.0" layoutY="47.0" radiusX="160.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#9384c1" layoutX="350.0" layoutY="47.0" radiusX="140.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="#f8f5f5" layoutX="261.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Absence Report">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <HBox layoutY="485.0" prefHeight="48.0" prefWidth="680.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="End Show" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="Export Report" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="220.0" right="30.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

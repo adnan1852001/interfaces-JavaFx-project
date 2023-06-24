@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="315.0" prefWidth="400.0" style="-fx-background-color: #343C4E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.EditAssistantTeacher">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#584a86" height="55.0" layoutX="58.0" layoutY="14.0" stroke="#9384c1" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60; -fx-stroke-width: 3;" width="286.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9384c1" height="55.0" layoutX="76.0" layoutY="14.0" stroke="#9384c1" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60; -fx-stroke-width: 3;" width="250.0" />
+      <Text fill="#f8f5f5" layoutX="110.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Attendence">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <HBox layoutY="247.0" prefHeight="46.0" prefWidth="400.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="Cancel" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="Present" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="Absent" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="16.0" layoutY="79.0" prefHeight="137.0" prefWidth="359.0">
+         <children>
+            <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Student ID, Name or phone" wrappingWidth="286.8193359375">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Lecture" wrappingWidth="286.8193359375">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <ChoiceBox prefHeight="30.0" prefWidth="360.0" style="-fx-border-color: #9384c1; -fx-border-width: 2;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

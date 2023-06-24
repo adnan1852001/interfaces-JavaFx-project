@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="555.0" prefWidth="820.0" style="-fx-background-color: #343C4E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.TA Tasks.ViewLectures">
+   <children>
+      <TableView layoutX="362.0" layoutY="90.0" prefHeight="450.0" prefWidth="450.0" stylesheets="@../../../../CSS/tableView.css">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Lecture ID" />
+          <TableColumn prefWidth="150.0" text="Lecture Title" />
+            <TableColumn minWidth="0.0" prefWidth="100.0" text="Attend Status" />
+            <TableColumn minWidth="0.0" prefWidth="100.0" text="Modify" />
+        </columns>
+      </TableView>
+      <Ellipse fill="#9384f3" layoutX="409.0" layoutY="43.0" radiusX="240.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#9384c1" layoutX="409.0" layoutY="43.0" radiusX="220.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="#f8f5f5" layoutX="229.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Attendence Report">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <VBox layoutX="14.0" layoutY="287.0" prefHeight="162.0" prefWidth="320.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="258.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecture ID" wrappingWidth="120.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="258.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecture Title" wrappingWidth="120.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="258.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Attend Status" wrappingWidth="120.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="109.0" prefHeight="162.0" prefWidth="320.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="258.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" wrappingWidth="140.8193359375">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="34.0" prefWidth="250.0" text="120201047" textFill="#d3c3c3">
+                     <font>
+                        <Font name="Algerian" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="258.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" wrappingWidth="140.8193359375">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="34.0" prefWidth="250.0" text="Hasan Sammour" textFill="#d3c3c3">
+                     <font>
+                        <Font name="Algerian" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="319.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name" wrappingWidth="140.8193359375">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="34.0" prefWidth="250.0" text="DBMS" textFill="#d3c3c3">
+                     <font>
+                        <Font name="Algerian" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="19.0" layoutY="487.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="300.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="End Show" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="180.0" layoutX="350.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" width="4.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5764706134796143" green="0.5176470875740051" blue="0.7568627595901489" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="180.0" layoutX="350.0" layoutY="331.0" stroke="BLACK" strokeType="INSIDE" width="4.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5764706134796143" green="0.5176470875740051" blue="0.7568627595901489" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</AnchorPane>

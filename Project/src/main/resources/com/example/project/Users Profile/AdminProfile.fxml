@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: #343C4E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9384f3" height="70.0" layoutX="34.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="326.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9384c1" height="70.0" layoutX="41.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="326.0" />
+      <Text fill="#f8f5f5" layoutX="113.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Profile">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <VBox layoutX="33.0" layoutY="111.0" prefHeight="177.0" prefWidth="356.0">
+         <children>
+            <HBox prefHeight="75.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="85.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="34.0" prefWidth="250.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="85.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="85.8193359375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #ffffff; -fx-border-color: #9384c1; -fx-border-width: 2;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="29.0" layoutY="273.0" prefHeight="60.0" prefWidth="340.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="334.0" style="-fx-background-color: #9384C1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #f8f5f5;" text="Cancel" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
